@@ -6,5 +6,6 @@ library(ggplot2)
 
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   theme_bw() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
   geom_point() +
   scale_x_log10()
