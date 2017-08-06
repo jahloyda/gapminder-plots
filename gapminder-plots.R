@@ -8,4 +8,5 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   theme_linedraw() +
   theme(panel.grid = element_blank()) +
   geom_point() +
+  geom_smooth(method = "lm") +
   scale_x_log10()
